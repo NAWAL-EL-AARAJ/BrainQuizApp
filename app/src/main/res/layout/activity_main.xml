@@ -15,8 +15,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:src="@drawable/img_1"
-        app:civ_border_width="8dp"></de.hdodenhof.circleimageview.CircleImageView>
-
+        app:civ_border_width="8dp"
+        app:civ_border_color="@color/primary"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,49 +27,70 @@
         <EditText
             android:id="@+id/Email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="55dp"
             android:layout_marginTop="20dp"
+            android:padding="12dp"
+
             android:drawableLeft="@android:drawable/ic_dialog_email"
-            android:drawableTint="#141313"
-            android:ems="10"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/icon_color"
+
+            android:background="@android:drawable/edit_text"
+
             android:hint="Email"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint"
+
+            android:textSize="16sp"
             android:inputType="textEmailAddress"
-            android:textColorHint="@color/black" />
+            android:ems="10"/>
 
         <EditText
             android:id="@+id/password_toggle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="55dp"
             android:layout_marginTop="20dp"
+            android:padding="12dp"
+
             android:drawableLeft="@android:drawable/ic_lock_idle_lock"
-            android:drawableTint="#19191A"
-            android:ems="10"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/icon_color"
+
+            android:background="@android:drawable/edit_text"
+
             android:hint="Password"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint"
+
+            android:textSize="16sp"
             android:inputType="textPassword"
-            android:textColorHint="@color/black" />
+            android:ems="10"/>
 
         <Button
             android:id="@+id/signing"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:textColor="@color/black"
-            android:text="Sign in" />
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/white"
+
+            android:text="Sign in"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
             android:gravity="center"
-            android:textSize="20dp"
-            android:textColor="@color/black"
-            android:background="@color/gray"
-            android:textStyle="italic"
-            android:text="To Register Click Here " />
-
-
+            android:text="Don't have an account? Register"
+            android:textSize="14sp"
+            android:textColor="@color/primary"
+            android:textStyle="bold"/>
 
     </LinearLayout>
-
 
 </LinearLayout>

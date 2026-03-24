@@ -15,6 +15,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:src="@drawable/img_1"
+        app:civ_border_color="@color/primary"
         app:civ_border_width="8dp"></de.hdodenhof.circleimageview.CircleImageView>
 
 
@@ -30,11 +31,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:drawableLeft="@android:drawable/ic_menu_myplaces"
-            android:drawableTint="#141313"
+            android:drawableTint="@color/black"
             android:ems="10"
             android:hint="Name"
             android:inputType="textEmailAddress"
-            android:textColorHint="@color/black" />
+            android:background="@android:drawable/edit_text"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16dp"/>
 
         <EditText
             android:id="@+id/EmailRegister"
@@ -42,11 +46,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:drawableLeft="@android:drawable/ic_dialog_email"
-            android:drawableTint="#141313"
+            android:drawableTint="@color/black"
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:textColorHint="@color/black" />
+            android:background="@android:drawable/edit_text"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16dp"/>
 
         <EditText
             android:id="@+id/password_toggle_register"
@@ -54,11 +61,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:drawableLeft="@android:drawable/ic_lock_idle_lock"
-            android:drawableTint="#19191A"
+            android:drawableTint="@color/black"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
-            android:textColorHint="@color/black" />
+            android:background="@android:drawable/edit_text"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16dp"/>
 
         <EditText
             android:id="@+id/confirm_password_toggle"
@@ -66,19 +76,24 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:drawableLeft="@android:drawable/ic_lock_idle_lock"
-            android:drawableTint="#19191A"
+            android:drawableTint="@color/black"
             android:ems="10"
             android:hint="Confirme Password"
             android:inputType="textPassword"
-            android:textColorHint="@color/black" />
+            android:background="@android:drawable/edit_text"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16dp"/>
 
         <Button
             android:id="@+id/register_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:textColor="@color/black"
-            android:text="Register" />
+            android:background="@color/primary"
+            android:textColor="@color/white"
+            android:text="Register"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"/>
 
 
 
